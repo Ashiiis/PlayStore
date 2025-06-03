@@ -1,0 +1,47 @@
+.card-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 16px;
+  margin-top: 10px;
+  margin-left:5% ;
+}
+
+.card-scroll-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for cleaner look */
+  
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 160px;
+  background: white;
+  border-radius: 16px;
+  text-align: center;
+  
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20%;
+}
+
+.card-title h2 {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 5%;
+  font-weight: 500;
+  color: #202124;
+}
+
+.card-rating {
+  font-size: 13px;
+  color: #555;
+}
+.card-title{
+    color: #202124;
+    align-items: left;
+}
