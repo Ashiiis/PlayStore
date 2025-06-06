@@ -73,6 +73,7 @@
   overflow-x: auto;
   gap: 12px;
   padding: 10px 24px;
+  margin-left: 5%;
 }
 
 .device-btn {
@@ -105,4 +106,9 @@
 .tabs-scroll::-webkit-scrollbar,
 .device-scroll::-webkit-scrollbar {
   display: none;
+}
+@media (max-width: 600px) {
+  .title {
+    display: none;
+  }
 }

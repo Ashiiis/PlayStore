@@ -28,16 +28,7 @@ const Navbar = () => {
           />
           <span className="title">Google Play</span>
         </div>
-
-        <div className="navbar-right">
-          <span className="material-icons icon">search</span>
-          <span className="material-icons icon">help_outline</span>
-          <span className="material-icons icon">account_circle</span>
-        </div>
-      </div>
-
-      {/* Scrollable Tabs */}
-      <div className="tabs-scroll">
+        <div className="tabs-scroll">
         {tabs.map((tab) => (
           <div
             key={tab}
@@ -48,6 +39,16 @@ const Navbar = () => {
           </div>
         ))}
       </div>
+
+        <div className="navbar-right">
+          <span className="material-icons icon">search</span>
+          <span className="material-icons icon">help_outline</span>
+          <span className="material-icons icon">account_circle</span>
+        </div>
+      </div>
+
+      {/* Scrollable Tabs */}
+      
 
       {/* Scrollable Devices */}
       <div className="device-scroll">
