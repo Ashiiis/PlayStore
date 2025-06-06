@@ -60,6 +60,7 @@ const Navbar = () => {
             <span className="material-icons device-icon">{deviceIcons[device]}</span>
             {device}
           </button>
+
         ))}
       </div>
     </div>
