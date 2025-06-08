@@ -13,14 +13,29 @@
   
 }
 
-.card {
+/* .card {
   flex: 0 0 auto;
   width: 160px;
   background: white;
   border-radius: 16px;
   text-align: center;
   
+} */
+
+.card {
+  flex: 0 0 auto;
+  width: 25%;
+  /* height: 25%; */
+  background: white;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  max-width: 165px;
+  /* max-height: 5%; */
 }
+
+/* Responsive: Half width on smaller screens */
+
 
 .card img {
   width: 100%;
