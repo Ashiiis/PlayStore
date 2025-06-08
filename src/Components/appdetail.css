@@ -46,10 +46,51 @@
   gap: 8px;
   flex-wrap: wrap;
 }
+.similar-games-section {
+  margin-top: 20px;
+}
+
+.similar-games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.similar-game-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.similar-game-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.game-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.game-sub {
+  color: gray;
+  font-size: 12px;
+}
+
+.game-rating {
+  font-size: 12px;
+  margin-top: 4px;
+}
 
 .app-install-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
   align-items: flex-start;
   justify-content: center;

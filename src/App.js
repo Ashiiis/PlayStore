@@ -2,7 +2,9 @@ import './App.css';
 import Navbar from './Components/Navbat';
 import CardScroll from './Components/CardScroll';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import PlayStoreAppCard from './Components/Appdetail';
+// import PlayStoreAppCard from './Components/Appdetail';
+// import GrokAppCard from './Components/apppage';
+import AppStoreCard from './Components/apppage';
 import Footer from './Components/Footer';
 
 function App() {
@@ -12,7 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<CardScroll />} />
-          <Route path="/details" element={<PlayStoreAppCard />} />
+          <Route path="/details" element={<AppStoreCard />} />
         </Routes>
         <Footer />
       </Router>

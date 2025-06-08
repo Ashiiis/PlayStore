@@ -1,0 +1,286 @@
+.app-card {
+  /* max-width: 600px; */
+  margin: 5%;
+  /* padding: 20px; */
+  /* background: #fff; */
+  /* border-radius: 12px; */
+  /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1); */
+  font-family: Arial, sans-serif;
+}
+
+.app-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.app-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+
+.stat-block {
+  text-align: center;
+  flex: 1;
+}
+.app-name {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 500;
+}
+.divider {
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 8px;
+  max-height: 30px;
+}
+.rating-box {
+  background: #eee;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.developer-name {
+  color: green;
+  margin-top: 2%;
+}
+
+.rating {
+  color: #666;
+  font-size: 14px;
+}
+
+/* .install-btn {
+  background-color: #01875f;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: fit-content;
+} */
+ .install-btn {
+  background-color: #01875f;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 40px;
+  position: relative;
+}
+
+.install-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 3px solid white;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.app-logo {
+  width: 182px;
+  height: 182px;
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .app-logo {
+    width: 91px;
+    height: 91px;
+  }
+}
+
+.stat-block p{
+  color: #666;
+  font-size: 14px;
+
+}
+.app-card p{
+  color: #555;
+}
+
+/* .playstore-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  /* background-color: #fafafa; */
+
+.left-section {
+  max-width: 779px;
+  margin: auto;
+}
+
+.banner-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  padding: 10px 0;
+}
+\.banner-scroll::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for clean look */
+}
+.banner-card {
+  flex: 0 0 auto;
+  width: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-section {
+  /* background-color: white; */
+  padding: 16px;
+  /* border-radius: 12px; */
+  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.about-description {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.updated-date {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 8%;
+}
+
+.similar-apps {
+  /* background: white; */
+  padding: 16px;
+  /* border-radius: 12px; */
+  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); */
+  
+}
+/* .subtitle {
+  margin-top:-5px;
+  display: block;
+  font-size: 14px;
+  color: rgb(31, 31, 31);
+} */
+
+.similar-apps h3,
+.app-support h3 {
+  margin: 0 0 12px 0;
+}
+
+.similar-app-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  /* border-bottom: 1px solid #eee; */
+  height: 20%;
+}
+
+.similar-app-card:last-child {
+  border-bottom: none;
+}
+
+.similar-app-card img {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.similar-app-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.playstore-container {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap; /* allow wrapping if needed */
+}
+
+@media (max-width: 768px) {
+  .playstore-container {
+    flex-direction: column;
+  }
+
+  .right-section {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+}
+.info h4{
+  padding: 0;
+}
+.similar-app-card .info h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.similar-app-card .info .subtitle {
+  margin-top: 1%;
+  font-size: 14px;
+  color: #666;
+}
+
+.similar-app-card .info p {
+  margin: 0;
+  font-size: 13px;
+  color: #444;
+}
+.similar-app-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
